@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Crypto Dashboard</title></head>
+<body>
+  <h1>💰 Актуальные курсы</h1>
+  <ul>
+    <li>DOGE: ${{ prices["DOGE"] }}</li>
+    <li>SOL: ${{ prices["SOL"] }}</li>
+    <li>XRP: ${{ prices["XRP"] }}</li>
+  </ul>
+
+  <h2>📊 Интерактивные графики</h2>
+  <h3>DOGE</h3>{{ charts_html["DOGE"]|safe }}
+  <h3>SOL</h3>{{ charts_html["SOL"]|safe }}
+  <h3>XRP</h3>{{ charts_html["XRP"]|safe }}
+</body>
+</html>
